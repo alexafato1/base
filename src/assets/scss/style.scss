@@ -3,6 +3,12 @@
 
 html{
     font-size: 62.5%;
+    color:$white;
+}
+
+*{
+    box-sizing: border-box;
+    color:$white;
 }
 
 body {
@@ -25,8 +31,8 @@ body {
    border:transparent;
    border-radius: 2rem;
    padding:  1em 1.3em ;
-   box-shadow: 5px 0 15px rgba(#050505, .2);
-   
+   box-shadow: 5px 0 15px rgba(#050505, .5);
+   color:white;
 }
 
 a{
@@ -49,5 +55,9 @@ a{
 @import "./blocks/_sidebar.scss";
 @import "./blocks/_container.scss";
 @import "./blocks/_main.scss";
+@import "./blocks/_stories.scss";
+@import "./blocks/_posts.scss";
+@import "./blocks/_media.scss";
+
 
  

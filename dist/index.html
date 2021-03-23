@@ -19,23 +19,36 @@
     <header class='header'>
         <div class="header__left">
             <nav class="nav">
-                <ul>
-                    <li>
-                        <a href="#">Главная</a>
-                    </li>
+                <ul class="nav__list"> <li>
+                    <a class="nav__link" href="#">Главная</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link has-subnav" href="#">Статьи</a>
+                    <ul class='subnav'>
+                        <li><a class="nav__link" href="#">Создание сайтов</a></li>
+                        <li><a class="nav__link" href="#">Интернет-маркетинг</a></li>
+                        <li><a class="nav__link" href="#">Продвижение видео</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="nav__link" href="#">Обо мне</a>
+                </li>
+                <li>
+                    <a class="nav__link" href="#">Реклама</a>
+                </li>
                 </ul>
             </nav>
         </div>
         <div class="header__right">
             <nav class="nav">
-                <ul>
+                <ul class='nav__list'>
                     <li>
-                        <a href="#">Профиль</a>
+                        <a class="nav__link" href="#">Профиль</a>
                     </li>
                 </ul>
             </nav>
-            <form action="" method="post">
-                <input type="text">
+            <form  action="" method="post">
+                <input class='nav__search' placeholder='Поиск по блогу' type="text">
             </form>
         </div>
     </header>
@@ -84,10 +97,59 @@
     </aside>     <main class='main'>
         <div class="container">
         
+        <div class="title">
+        <h2>Мои лучшие работы</h2>
+        </div>
+        <div class="stories">
+            
+            <div class="stories__item">
+              <img src="./assets/images/story1.webp" alt="">
+              <div class="stories__title">Сайт интернет-магазина мебели</div>
+        
+            </div>
+            
+            <div class="stories__item">
+                <img src="./assets/images/story2.webp" alt="">
+                <div class="stories__title">Сайт-визитка студии</div>
+            </div>
+            <div class="stories__item">
+                <img src="./assets/images/story3.webp" alt="">
+                <div class="stories__title">Сайт-портфолио ландшафтного дизайнера</div>
+            </div>
+            <div class="stories__item">
+                <img src="./assets/images/story4.webp" alt="">
+                <div class="stories__title">Сайт-реклама кофе</div>
+            </div>
+        </div>
+        
+        <div class="posts">
+           
+                <form class="add-post" action="">
+             <textarea rows="5" cols="33" class='add-post__text' name='text'type="text"></textarea>
+             <div class="add-post__photo">
+             <img src="./assets/images/photo.png" alt="">
+             <input name ='photo' class='input-file' name="photo" type="file">
+             <button class='btn btn--blue'>	
+                &#10148;</button></div>
+            </form>
+            <div class="post">
+                <h3 class="post__title">10 полезных приёмов для JavaScript-программистов</h3>
+                <p class='post__text'>
+                    Как всем известно, JavaScript — это язык, который очень быстро развивается. В стандарте ES2020 имеется немало новых возможностей, с которыми вам, вероятно, захочется познакомиться поближе. Честно говоря, писать JS-код можно по-разному. Различные варианты кода, направленные на решение одной и той же задачи, способны дать один и тот же результат, но некоторые из этих вариантов кода могут оказаться значительно короче и чище других. Для того чтобы сделать код качественнее и понятнее, можно пользоваться всяческими полезными приёмами. О некоторых из таких приёмов речь пойдёт в материале, перевод которого мы сегодня публикуем. Надеемся, то, о чём вы сегодня узнаете, когда-нибудь вам пригодится.
+                </p>
+                
+            </div>
+            <div class="post">
+                <h3 class="post__title">10 полезных приёмов для JavaScript-программистов</h3>
+                <p class='post__text'>
+                    Как всем известно, JavaScript — это язык, который очень быстро развивается. В стандарте ES2020 имеется немало новых возможностей, с которыми вам, вероятно, захочется познакомиться поближе. Честно говоря, писать JS-код можно по-разному. Различные варианты кода, направленные на решение одной и той же задачи, способны дать один и тот же результат, но некоторые из этих вариантов кода могут оказаться значительно короче и чище других. Для того чтобы сделать код качественнее и понятнее, можно пользоваться всяческими полезными приёмами. О некоторых из таких приёмов речь пойдёт в материале, перевод которого мы сегодня публикуем. Надеемся, то, о чём вы сегодня узнаете, когда-нибудь вам пригодится.
+                </p>
+                <img src="./assets/images/post1.webp" alt="">
+            </div>
+        
+        </div>
         
         
-        
-        Hello!
     </div>
     </main>
      </div>
