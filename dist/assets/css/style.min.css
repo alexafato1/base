@@ -416,7 +416,7 @@ a {
   height: 100vh;
   background-color: #202020;
   box-shadow: 5px 0 15px rgba(5, 5, 5, 0.2);
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   margin: 0 auto;
@@ -566,4 +566,11 @@ main {
   .stories {
     grid-template-columns: repeat(2, 1fr); }
   .header__left {
-    display: none; } }
+    display: none; }
+  .header__right {
+    width: 70%;
+    margin-left: auto; }
+  .nav__search {
+    width: 30rem; }
+  .post__title {
+    line-height: 2rem; } }
