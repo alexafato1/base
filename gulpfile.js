@@ -17,6 +17,7 @@ const notify = require("gulp-notify");
 const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
 const browserSync = require("browser-sync").create();
+const htmlmin = require('gulp-htmlmin');
 
 
 /* Paths */
@@ -71,6 +72,9 @@ function html(cb) {
             helpers:    srcPath + 'helpers/',
             data:       srcPath + 'data/'
         }))
+        .pipe(htmlmin({
+            collapseWhitespace: true
+          }))
         .pipe(dest(path.build.html))
         .pipe(browserSync.reload({stream: true}));
 

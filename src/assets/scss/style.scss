@@ -23,7 +23,7 @@ body {
     Cantarell,
     "Helvetica Neue",
     sans-serif;
-    line-height: 1.4rem;
+    line-height: 2rem;
 }
 
 .btn{
@@ -57,6 +57,7 @@ a{
 @import "./blocks/_main.scss";
 @import "./blocks/_stories.scss";
 @import "./blocks/_posts.scss";
+
 @import "./blocks/_media.scss";
 
 
